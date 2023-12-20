@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./funciones.js"></script>
+    <script src="./recursos/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Mi Personaje</title>
+</head>
+<body>
+
+    <button onclick="guardaPersonaje()">Guardar</button>
+
+    <h2>Info General</h2>
+
+    <div id="contenido">
+
+        <table>
+            <tr>
+                <td class="azul">Nom:</td>
+                <td contenteditable="true"> Mi personaje</td>
+
+            </tr>
+            <tr>
+                <td class="azul">Raça:</td>
+                <td contenteditable="true"></td>
+
+            </tr>
+            <tr>
+                <td class="azul">Ofici:</td>
+                <td contenteditable="true">Mago-Druida</td>
+
+
+            </tr>
+            <tr>
+                <td class="azul">Experiencia:</td>
+                <td contenteditable="true"> 1000</td>
+
+            </tr>
+            <tr>
+                <td class="azul">Diners:</td>
+                <td contenteditable="true"> 5 bronce</td>
+
+            </tr>
+            <tr>
+                <td class="azul">Bolsa:</td>
+                <td contenteditable="true">Exemple-> 10 espais: 1 daga, 1 llet, 1 escut...</td>
+
+            </tr>
+             
+            <tr>
+                <td class="azul">Zona:</td>
+                <td contenteditable="true">Taberna</td>
+
+            </tr>
+            <tr>
+                <td class="azul">Aliats:</td>
+                <td contenteditable="true"> Escriu els teus aliats (tant reals com NPC)</td>
+            </tr>
+
+        </table>
+
+    <hr>
+
+    <table border="1px solid black" id="stats">
+        <tr>
+            <td><h2>Stats</h2></td>
+            <td></td>
+            <td><h2>Equip de combat</h2></td>
+            <td></td>
+        </tr>
+        <tr>
+   
+            
+
+            <tr>
+                <td class="azul" style="color: red;">Vida:</td>
+                <td contenteditable="true"> 100</td>
+                <td class="azul">Cap:</td>
+                <td contenteditable="true"> </td>
+
+            </tr>
+            <tr>
+                <td class="azul"  style="color: blue;">Maná:</td>
+                <td contenteditable="true"> 100</td>
+                <td class="azul">Pendientes:</td>
+                <td contenteditable="true"> </td>
+
+            </tr>
+            <tr>
+                <td class="azul">Atac:</td>
+                <td contenteditable="true">5</td>
+                <td class="azul">Torso:</td>
+                <td contenteditable="true"> </td>
+
+
+            </tr>
+            <tr>
+                <td class="azul">Defensa:</td>
+                <td contenteditable="true"> 5</td>
+                <td class="azul">Hombros/Capa:</td>
+                <td contenteditable="true"> </td>
+
+            </tr>
+            <tr>
+                <td class="azul">Atac Mágic:</td>
+                <td contenteditable="true"> 5</td>
+                <td class="azul">Ma esquerre:</td>
+                <td contenteditable="true"> </td>
+
+            </tr>
+            <tr>
+                <td class="azul">Defensa Mágica:</td>
+                <td contenteditable="true"> 5</td>
+                <td class="azul">Ma dreta:</td>
+                <td contenteditable="true"> Daga A+2 / bastó mágic AM+2</td>
+
+            </tr>
+                
+            <tr>
+                <td class="azul">Agilitat:</td>
+                <td contenteditable="true">5</td>
+                <td class="azul">Cames:</td>
+                <td contenteditable="true"> 5</td>
+
+            </tr>
+            <tr>
+                <td class="azul">Carisma:</td>
+                <td contenteditable="true"> 5</td>
+                <td class="azul">Nº Bolsas:</td>
+                <td contenteditable="true"> 1</td>
+
+            </tr>
+
+            <tr>
+                <td class="azul">Potenciadors / Efectes de Stat:</td>
+                <td contenteditable="true"> 
+                        Exemple-> daga A+2, casco D+5, Veneno V-10 x 3 turnos, etc..
+            
+                </td>
+
+            </tr>
+                
+        </tr>
+    </table>
+    </div>
+   
+    
+
+    
+    <hr>
+
+    <p>Tenies ja una partida? Carregala así:</p>
+    <input type="file" id="archivoInput" /> <br><br>
+
+    <p>Una volta estiga carregat el archiu, apreta este botó: </p>
+    <button onclick="cargaPersonaje()">Cargar Archivo</button>
+
+</body>
+</html>

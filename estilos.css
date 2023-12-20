@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(231, 191, 117);
+}
+tr,td{
+    border: 1px solid black;
+    padding: 10px;
+  
+}
+
+.azul{
+    background-color: lightblue;
+}
+
+td{
+    background-color: white;  
+}
